@@ -4,7 +4,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 
 # ── НАСТРОЙКИ ──────────────────────────────────────────────
-TOKEN = "8662545272:AAEuVOXDQwq3YcAVEclWNvXJyle8T6ycVks"
+import os
+TOKEN = os.getenv("BOT_TOKEN")
 CHANNEL = "@edazagotovki"
 CHANNEL_URL = "https://t.me/edazagotovki"
 PDF_PATH = "menu_final.pdf"  # положи рядом с bot.py
